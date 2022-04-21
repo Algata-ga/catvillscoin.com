@@ -1,0 +1,39 @@
+.main{
+    height: calc(100vh - 90px);
+    width: 100%;
+    border-bottom: 2px solid black;
+
+}
+.contract{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    border-bottom : 2px solid black;
+}
+.main1{
+    height: 85vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.main1 h1{
+    font-size: 6rem;
+    font-weight: bolder;
+    text-shadow: -10px 15px greenyellow;
+}
+.main1 p{
+    font-size: 1.5rem;
+    max-width: 80%;
+}
+.btns{
+    display: flex;
+    width: 300px;
+    justify-content: space-evenly;
+    
+}
+.btn{
+    margin: 10px 210px;
+}
