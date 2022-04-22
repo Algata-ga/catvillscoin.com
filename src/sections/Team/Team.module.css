@@ -1,0 +1,50 @@
+.team{
+    background: black;
+}
+.teamcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.teamcontainer p{
+    width: 80%;
+    margin: 2rem 0;
+    text-align: center;
+}
+.boxcontainer{
+    display: grid;
+    height: auto;
+    grid-template-columns: repeat(3, minmax(20rem, 1fr));
+}
+.box{
+    margin: 30px 30px;
+    width: 279px !important;
+    aspect-ratio: 1;
+    color: greenyellow;
+    text-align: right;
+    margin-bottom: 5rem;
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.imgbox img{
+    object-fit: contain;
+    position: absolute;
+    left: 0;
+    border: 2px solid grey;
+    width: 100%;
+    height: 100%;
+}
+.box h4{
+    margin: 10px 0;
+}
+@media (max-width:992px) {
+    .boxcontainer{
+        display: grid;
+        height: auto;
+        grid-template-columns: repeat(1, minmax(20rem, 1fr));
+    } 
+}
