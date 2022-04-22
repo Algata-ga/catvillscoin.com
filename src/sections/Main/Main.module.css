@@ -19,6 +19,23 @@
     flex-direction: column;
 
 }
+.catlogo{
+    margin-bottom: 1rem;
+    border: 2px solid black;
+    height: 185px;
+    width: 192px;
+    position: relative;
+}
+.catlogo::before{
+    content: "";
+    position: absolute;
+    width: 100% !important;
+    height: 100% !important;
+    top: 10px;
+    left: 10px;
+    border: 3px solid greenyellow;
+    z-index: -1;
+}
 .main1 h1{
     font-size: 6rem;
     font-weight: bolder;
@@ -36,4 +53,25 @@
 }
 .btn{
     margin: 10px 210px;
+}
+.social{
+    width: auto;
+    margin: 1rem 0;
+}
+.link{
+    font-size: 1.8rem;
+    margin: 10px 20px;
+    background: greenyellow;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding: 5px;
+}
+.partner{
+    display: flex;
+    margin-top: 1rem;
+}
+.partnerimg{
+    width: 30px;
+    margin: 0 10px;
 }

@@ -1,5 +1,9 @@
 import style from "./Main.module.css";
 import logo from "../../assets/background .png";
+import challengers from "../../assets/challengers.png";
+
+import cmc from "../../assets/cmc.png";
+
 import { Rightbtn, Leftbtn } from "../../components";
 import { Container } from "react-bootstrap";
 import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
@@ -16,7 +20,10 @@ const Main = () => {
             </div>
             <Container>
                 <div className={style.main1}>
-                    <img src={logo} alt="catvills" />
+                    
+                    <div className={style.catlogo}>
+                    <img  src={logo} alt="catvills" />
+                    </div>
                     <h1>CATVILLS COIN</h1>
                     <p>Catvills coin is community token driven on BSC Network projects and will bring our investor whenever they want. Catvills coin without community is nothing. our investor is king here.</p>
                     <div className={style.btns}>
@@ -35,8 +42,8 @@ const Main = () => {
                     </div>
                     <div className={style.partner}>
                         <h5>Strategic Partners :</h5>
-                        <img src="" alt="challengers" />
-                        <img src="" alt="cryptomallu" />
+                        <img className={style.partnerimg} src={challengers} alt="challengers" />
+                        <img className={style.partnerimg} src={cmc} alt="cryptomallu" />
                     </div>
                 </div>
             </Container>

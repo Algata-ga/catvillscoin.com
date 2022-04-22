@@ -1,5 +1,5 @@
 import { Navbar } from "./components";
-import { Main } from "./sections";
+import { Main,Announcement } from "./sections";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -9,6 +9,7 @@ function App() {
     <>
       <Navbar />
       <Main />
+      <Announcement />
     </>
   )
 }

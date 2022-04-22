@@ -12,6 +12,17 @@
     align-items: center;
     justify-content: space-between;
 }
+.hamburger{
+    position: relative;
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+.hamburger img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .links{
     display: flex;
@@ -24,4 +35,46 @@
 
     margin: 15px 15px;
     list-style: none;
+}
+@media (max-width:768px) {
+    .hamburger{
+        display: block;
+    }
+    .linkbox{
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        left: 0;
+        top: 60px;
+        background: red;
+        clip-path: circle(0% at 100% 0% );
+        z-index: 2;
+        transition: .2s ease-in-out;
+        animation: animate 2s ease-in-out forwards;
+    }
+    .open{
+        animation: animate2 2s ease forwards;
+        display: none;
+        
+    }
+    @keyframes animate {
+        from{
+            clip-path: circle(0% at 100% 0% );
+        }
+        to{
+            clip-path: circle(90% at 100% 0% );
+        }
+    }
+    @keyframes animate2 {
+        from{
+            clip-path: circle(90% at 0% 0% );
+        }
+        to{
+            clip-path: circle(0% at 100% 0% );
+
+        }
+    }
+    .links{
+        flex-direction: column;
+    }
 }
