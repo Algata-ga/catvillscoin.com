@@ -3,7 +3,7 @@ const Heading = (props) => {
 
     return (
         <>
-        <h3 className={style.heading}>{props.heading}</h3>
+        <h3 className={style.heading}>{props.heading}<span>{props.change}</span></h3>
         </>
     );
 };

@@ -3,7 +3,7 @@ import { Container } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 import banner1 from "../../assets/banner.jpg";
 import banner2 from "../../assets/banner2.jpg";
-import { Heading } from "../../components";
+import { Heading,Line } from "../../components";
 
 
 const Announcement = () => {
@@ -11,9 +11,8 @@ const Announcement = () => {
         <>
 
             <section className={style.announcement}>
-                <div className={style.extra}>
-
-                </div>
+            <Line/>
+                
                 <Container>
                     <Heading heading="Announcements" />
                     <Carousel fade className={style.carousel} controls={false} indicators={false}>
@@ -38,9 +37,8 @@ const Announcement = () => {
                         </Carousel.Item>
 
                     </Carousel>
-                    <div className={style.extra}>
+                    <Line/>
 
-                </div>
                 </Container>
 
             </section>
