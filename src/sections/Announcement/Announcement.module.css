@@ -6,8 +6,12 @@
     justify-content: center;
     flex-direction: column;
     height: auto;
+    
 }
+.announcont{
+    padding-top: 3rem;
 
+}
 
 .carousel{
     width: 100% !important;

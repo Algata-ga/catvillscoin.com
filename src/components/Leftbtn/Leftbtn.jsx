@@ -3,7 +3,7 @@ const Leftbtn = (props) => {
 
     return (
         <>
-        <button className={style.leftbtn}  style={{width:props.width,height:props.height}}>{props.name}</button>
+        <a href="#"><button className={style.leftbtn}  style={{width:props.width,height:props.height}}>{props.name}</button></a>
         </>
     );
 };

@@ -13,8 +13,8 @@ const Announcement = () => {
             <section className={style.announcement}>
             <Line/>
                 
-                <Container>
-                    <Heading heading="Announcements" />
+                <Container className={style.announcont}>
+                    <Heading heading="Announcements"/>
                     <Carousel fade className={style.carousel} controls={false} indicators={false}>
                         <Carousel.Item className={style.carouselitem} interval={2000}>
                             <div className={style.imgbox}>

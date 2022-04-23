@@ -42,8 +42,8 @@ const Main = () => {
                     </div>
                     <div className={style.partner}>
                         <h5>Strategic Partners :</h5>
-                        <img className={style.partnerimg} src={challengers} alt="challengers" />
-                        <img className={style.partnerimg} src={cmc} alt="cryptomallu" />
+                        <a href="#"><img className={style.partnerimg} src={challengers} alt="challengers" /></a>
+                        <a href="#"><img className={style.partnerimg} src={cmc} alt="cryptomallu" /></a>
                     </div>
                 </div>
             </Container>

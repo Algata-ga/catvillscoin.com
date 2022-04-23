@@ -1,6 +1,8 @@
 .buy{
     background: black;
     color: white;
+    padding-top: 3rem;
+
 }
 .buycontainer{
     display: flex;

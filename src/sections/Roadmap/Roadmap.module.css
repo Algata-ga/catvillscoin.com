@@ -1,13 +1,16 @@
 .roadmap{
-    background: black;
+    background: #000000;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 3rem;
 }
 
 
 .colored{
     display: flex;
     flex-direction: column;
+}
+.content h3,.content h6{
+    color: white !important;
 }
 
 .colored h3,.colored h6{
@@ -17,6 +20,7 @@
 
 .content h6{
     line-height: 1.6rem;
+    font-weight: 500;
 }
 
 
@@ -206,7 +210,7 @@
     }
     .timeline ul li:nth-child(odd)::before,
     .timeline ul li:nth-child(even)::before {
-        top: 49px;
+        top: 43px;
         left: 15px;
     }
     .timeline ul li:nth-child(odd) .time,

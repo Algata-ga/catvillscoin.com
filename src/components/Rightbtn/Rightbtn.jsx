@@ -3,7 +3,7 @@ const Rightbtn = (props) => {
 
     return (
         <>
-        <button className={style.rightbtn} style={{width:props.width,height:props.height}}>{props.name}</button>
+        <a href="#"></a><button className={style.rightbtn} style={{width:props.width,height:props.height}}>{props.name}</button><a/>
         </>
     );
 };

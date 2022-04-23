@@ -23,10 +23,10 @@ const Footer = () => {
             </div>
             </div>
             <div className={style.links}>
-            <FiFacebook className={style.link} />
-                        <FiTwitter className={style.link} />
-                        <FiInstagram className={style.link} />
-                        <AiOutlineMedium className={style.link} />
+                        <a href="#"><FiFacebook className={style.link} /></a>
+                        <a href="#"><FiTwitter className={style.link} /></a>
+                        <a href="#"><FiInstagram className={style.link} /></a>
+                        <a href="#"><AiOutlineMedium className={style.link} /></a>
                         {/*<IoPaperPlaneOutline className={style.link} />*/}
             </div>
             </div>

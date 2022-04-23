@@ -2,7 +2,7 @@
     position: relative;
     background: transparent;
     border: none;
-    width: 125px;
+    width: 125px !important;
     height: 26px;
     display: flex;
     align-items: center;

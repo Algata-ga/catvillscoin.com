@@ -1,5 +1,6 @@
 .extra{
-    padding-top: 2rem;
+    padding-top: 1rem;
     width: 100%;
-    border-bottom: 2px solid white;
+    border-bottom: 1px solid white;
+    padding-bottom: 2rem;
 }
