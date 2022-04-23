@@ -68,6 +68,7 @@
     height: 40px;
     border-radius: 50%;
     padding: 5px;
+    color: black;
 }
 .partner{
     display: flex;

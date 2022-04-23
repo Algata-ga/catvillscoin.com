@@ -31,10 +31,10 @@ const Main = () => {
                         <Rightbtn className={style.btn} name="Chart" width="200px" height="40px"/>
                     </div>
                     <div className={style.social}>
-                        <FiFacebook className={style.link} />
-                        <FiTwitter className={style.link} />
-                        <FiInstagram className={style.link} />
-                        <AiOutlineMedium className={style.link} />
+                        <a href="#"><FiFacebook className={style.link} /></a>
+                        <a href="#"><FiTwitter className={style.link} /></a>
+                        <a href="#"><FiInstagram className={style.link} /></a>
+                        <a href="#"><AiOutlineMedium className={style.link} /></a>
                         {/*<IoPaperPlaneOutline className={style.link} />*/}
 
 

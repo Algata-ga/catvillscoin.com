@@ -77,12 +77,14 @@ const Latest = () => {
                         modules={[Autoplay, EffectCoverflow, Pagination]}
                     >
                         {medium.map((item) =>
-                            <SwiperSlide key={item.id} className={style.swiperslide}     >
-                                <div className={style.imgbox}>
-                                    <img src={item.image_url} />
+                            <SwiperSlide key={item.id}      >
+                                <div className={style.swiperslide}>
+                                    <div className={style.imgbox}>
+                                        <img src={item.image_url} />
+                                    </div>
+                                    <h5>{item.title}</h5>
+                                    <p>{item.content}</p>
                                 </div>
-                                <h5>{item.title}</h5>
-                                <p>{item.content}</p>
                             </SwiperSlide>
                         )}
                     </Swiper>

@@ -10,16 +10,12 @@
     margin-bottom: 1rem;
 }
 .swiperslide{
-    background: black;
-    width: 24rem !important;
+    
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    color: white;
-    margin: 0 10px;
-    border:  2px solid #383838;
-    overflow: hidden;
+    
 
 }
 .swiperslide .imgbox{
@@ -53,32 +49,4 @@
 }
 .swiperslide p{
     color: #828282;
-}
-@media (max-width:992px) {
-    .swiperslide{
-        width: 33%;
-        margin:  0 10px ;
-
-    }
-}
-@media (max-width:768px) {
-    .swiperslide{
-        width: 22rem !important;
-        margin:  0 10px ;
-
-    }
-}
-@media (max-width:576px) {
-    .swiperslide{
-        margin:  0 5px;
-        
-        width: 20rem !important;
-    }
-}
-@media (max-width:400px) {
-    .swiperslide{
-        margin:  0 5px ;
-        
-        width: 18rem!important;
-    }
 }
