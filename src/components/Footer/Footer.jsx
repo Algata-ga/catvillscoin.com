@@ -35,7 +35,7 @@ const Footer = () => {
                         <a href="https://telegram.me/+LV6E7-Pi5vo1NGE9">
                             <RiSendPlaneFill className={style.link} />
                         </a>
-                        <a href="catvillscoin.eth">
+                        <a href="https://catvillscoin.eth">
                             <FaEthereum className={style.link} />
                         </a>
                     </div>
