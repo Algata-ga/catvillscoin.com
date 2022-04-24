@@ -6,6 +6,7 @@ import director from "../../assets/director.jpg";
 import dev from "../../assets/dev.jpg";
 import pr from "../../assets/pr.jpg";
 import marketer from "../../assets/marketer.jpg";
+import { AiOutlineClose } from 'react-icons/ai';
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -21,41 +22,37 @@ const teams = [
         name: "Gerrad Salva",
         image_url: owner,
         designation: "Owner",
-        bio: "lorem fkslkfjlsk",
-        id: 0,
-    },
-    {
-        name: "Fitre Agustin",
-        image_url: pr,
-        designation: "Marketing",
-        bio: "lorem fkslkfjlsk",
-
-        id: 1,
-    },
-    {
-        name: "Nizar",
-        image_url: dev,
-        designation: "IT",
-        bio: "lorem fkslkfjlsk",
-
-        id: 2,
+        bio: "I'm Gerard Salva owner of Catvills Project &  bussiness, export frozen fish to Fuzho Chinese Actually the beginning why I want to make my cat project, Because I'm bored and often lose buying other tokens that loose their value in the future. That's why I made catvills coin , and my project is for the long term. Where are we all going in the hands of investors, to what extent do we support you, I hope we can get to the Binance market. The community is king here, I will only provide the best service and security for your investment in Catvills Coin. Whatever this project lacks, let's fix it together. I will always prioritize your suggestions. The point is that everything is for the trust of Catvills coin investors, we will continue to grow together.",
     },
     {
         name: "Saqlain Haider",
         image_url: director,
         designation: "Director",
-        bio: "lorem fkslkfjlsk",
+        bio: "Saqlain Haider is a student at Bahauddin Zakariya University Multan Punjab Pakistan in the field of Physics. To gain knowledge & achieve goals in the field of science & technology always remain his passion. He is a young Entrepreneur as well as trader and investor in the field of Crypto and other organizations at the age of 22 years. He Joined with the Catvills Project in April  2022 when the project was at his early stage. He always loved to work with the Catvills Project honourable team. He developed a strong relation with Biljo (a team member) & whole community. His dedications are with the team & his efforts are towards the Success of the Project.",
 
-        id: 3,
     },
     {
         name: "Biljo",
         image_url: marketer,
-        designation: "Blank",
-        bio: "lorem fkslkfjlsk",
+        designation: "Managing Director",
+        bio: "Aviation graduate Worked as community manager and adviser for various projects ..He is a selfmade entrepreneur.Currently Work for catvills as managing director",
 
-        id: 4,
     },
+    {
+        name: "Fitre Agustin",
+        image_url: pr,
+        designation: "Marketing",
+        bio: "content marketing professional at local crypto services, an inbound marketing and sales platform that helps project attract visitors, convert leads, and close customers.",
+
+    },
+    {
+        name: "Nizar",
+        image_url: dev,
+        designation: "Software Developer",
+        bio: "Solidity and software developer with 10 years experiences in development.",
+
+    },
+    
 ];
 
 const Team = () => {
@@ -92,7 +89,7 @@ const Team = () => {
                     modules={[Autoplay, EffectCoverflow, Pagination]}
                 >
                     {teams.map((item, index) => (
-                        <SwiperSlide key={item.id} style={{ border: "none" }}>
+                        <SwiperSlide key={item.name} style={{ border: "none" }}>
                             <div
                                 className={style.box}
                                 onClick={() => setCurMember(index)}
@@ -108,12 +105,13 @@ const Team = () => {
                 </Swiper>
                 {curMember != null && (
                     <Modal>
-                        <div>
-                            <h1>{teams[curMember].name}</h1>
+                        <div className={style.modalcontainer}>
                             <img src={teams[curMember].image_url} />
-                            <p>{teams[curMember].designation}</p>
-                            <button onClick={() => setCurMember(null)}>
-                                CLOSE ME
+                            <h2>{teams[curMember].name}</h2>
+                            <h4>{teams[curMember].designation}</h4>
+                            <h6>{teams[curMember].bio}</h6>
+                            <button className={style.close} onClick={() => setCurMember(null)}>
+                                <AiOutlineClose />
                             </button>
                         </div>
                     </Modal>

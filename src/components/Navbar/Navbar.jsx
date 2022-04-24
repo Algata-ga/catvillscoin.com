@@ -84,7 +84,6 @@ const Navbar = () => {
 
                             <Rightbtn
                                 name="Whitepaper"
-                               
                                 width={window.matchMedia("(max-width:768px)").matches?"200px":"140px"}
                                 height={window.matchMedia("(max-width:768px)").matches?"40px":"30px"}
                             />

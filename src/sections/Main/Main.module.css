@@ -19,6 +19,7 @@
     padding: 0 10px;
 }
 .main1{
+                               
     height: 85vh;
     display: flex;
     align-items: center;
@@ -42,14 +43,14 @@
     height: 100% !important;
     top: 10px;
     left: 10px;
-    border: 3px solid greenyellow;
+    border: 3px solid #bbeb69;
     z-index: -1;
 }
 .main1 h1{
     font-size: 6rem;
     font-weight: bolder;
     color: black;
-    text-shadow: -10px 15px greenyellow;
+    text-shadow: -10px 15px #bbeb69;
 }
 .main1 p{
     font-size: 1.5rem;
@@ -71,7 +72,7 @@
 .link{
     font-size: 1.8rem;
     margin: 10px 20px;
-    background: greenyellow;
+    background: #bbeb69;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -83,17 +84,20 @@
     margin-top: 1rem;
     position: relative;
 }
+.partner h5{
+    font-weight: bold;
+}
 .partnerimg{
     width: 50px;
     margin: 0 10px;
-    top: -10px;
+    top: -12px;
     position: relative;
 }
 
 @media screen and (max-width:992px) {
     .main1 h1{
         font-size: 5rem;
-        text-shadow: -10px 10px greenyellow;
+        text-shadow: -10px 10px #bbeb69;
 
     }
     .main1 p{
@@ -104,7 +108,7 @@
 @media screen and (max-width:768px) {
     .main1 h1{
         font-size: 4rem;
-        text-shadow: -8px 10px greenyellow;
+        text-shadow: -8px 10px #bbeb69;
 
     }
     .main1 p{
@@ -115,7 +119,7 @@
 @media screen and (max-width:567px) {
     .main1 h1{
         font-size: 3rem;
-        text-shadow: -5px 8px greenyellow;
+        text-shadow: -5px 8px #bbeb69;
 
     }
     .main1 p{
@@ -126,7 +130,7 @@
 @media screen and (max-width:400px) {
     .main1 h1{
         font-size: 2.6rem;
-        text-shadow: -5px 8px greenyellow;
+        text-shadow: -5px 8px #bbeb69;
 
     }
     .main1 p{
@@ -136,7 +140,7 @@
     .link{
         font-size: 1.5rem;
         margin: 10px 10px;
-        background: greenyellow;
+        background: #bbeb69;
         width: 40px;
         height: 40px;
         border-radius: 50%;

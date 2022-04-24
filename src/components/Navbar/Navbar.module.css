@@ -46,7 +46,7 @@
     color: white;
 }
 .link:hover,.links li a:hover{
-    color: greenyellow;
+    color: #bbeb69;
 }
 @media (max-width:768px) {
     .hamburger{
@@ -65,7 +65,7 @@
     .btn div,.active div{
         width: 20px;
         height: 2px;
-        background: greenyellow;
+        background: #bbeb69;
         margin: 3px;
         position: relative;
         transition: .6s ease;
