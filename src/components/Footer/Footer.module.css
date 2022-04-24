@@ -10,18 +10,24 @@
 .imgbox{
     padding-left: 30px;
     order: 0;
+    width: 33%;
 }
 
 
 .copy{
     order: 1;
     color: white;
-    display: flex;align-items: center;
+    display: flex;
+    align-items: center;
     justify-content: center;
+    width: 33%;
 }
 .links{
     padding-right: 30px;
     order: 2;
+    width: 33%;
+    text-align: right;
+
 
 }
 .link{
@@ -47,13 +53,29 @@
         order: 1;
         padding-right: 0;
         margin: 5px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
     .copy{
         order: 2;
         margin: 5px 0;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
 
     }
     .imgbox{
         padding-top: 1rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
     }
 }

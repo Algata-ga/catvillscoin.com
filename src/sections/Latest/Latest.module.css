@@ -45,9 +45,11 @@
     -webkit-line-clamp: 3;
     margin: 5px 0;
     text-align: center;
+    color:#fff;
 }
 .swiperslide h5{
     font-weight: bold;
+
 }
 .swiperslide p{
     color: #828282;

@@ -1,7 +1,8 @@
 .main{
-    height: calc(100vh - 90px);
+    height: min(fit-content,calc(100vh - 90px));
     width: 100%;
     border-bottom: 2px solid black;
+    margin-top: 60px;
 
 }
 .contract{
@@ -11,6 +12,11 @@
     padding-top: 0.5rem;
     border-bottom : 2px solid black;
     text-align: center;
+}
+.span{
+    background: rgba(175, 239, 79, 0.796);
+    border-radius: 25px;
+    padding: 0 10px;
 }
 .main1{
     height: 85vh;
@@ -27,6 +33,7 @@
     height: 185px;
     width: 192px;
     position: relative;
+    background: black;
 }
 .catlogo::before{
     content: "";
@@ -76,9 +83,9 @@
     position: relative;
 }
 .partnerimg{
-    width: 30px;
+    width: 50px;
     margin: 0 10px;
-    top: -7px;
+    top: -10px;
     position: relative;
 }
 

@@ -1,7 +1,12 @@
 import { Container } from "react-bootstrap";
 import { Heading, } from "../../components";
 import style from "./Team.module.css";
-import team1 from "../../assets/team1.png"
+import owner from "../../assets/owner.jpg";
+import director from "../../assets/director.jpg"
+import dev from "../../assets/dev.jpg"
+import pr from "../../assets/pr.jpg"
+import marketer from "../../assets/marketer.jpg"
+
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -13,38 +18,33 @@ import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 
 const teams = [
     {
-        "name": 'A',
-        "image_url": team1,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
+        "name": 'Gerrad Salva',
+        "image_url": owner,
+        "designation": 'Owner',
         "id": 0,
     },
     {
-        "name": 'B',
-        "image_url": team1,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
+        "name": 'Fitre Agustin',
+        "image_url": pr,
+        "designation": 'Marketing',
 
         "id": 1,
     }, {
-        "name": 'C',
-        "image_url": team1,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
+        "name": 'Nizar',
+        "image_url": dev,
+        "designation": 'IT',
 
         "id": 2,
     }, {
-        "name": 'D',
-        "image_url": team1,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
+        "name": 'Saqlain Haider',
+        "image_url": director,
+        "designation": 'Director',
 
         "id": 3,
     }, {
-        "name": 'E',
-        "image_url": team1,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
+        "name": 'Biljo',
+        "image_url": marketer,
+        "designation": 'Blank',
 
         "id": 4,
     }
@@ -81,8 +81,8 @@ const Team = () => {
                                     <div className={style.imgbox}>
                                         <img src={item.image_url} alt="" />
                                     </div>
-                                    <h4>Franklin Dermerus</h4>
-                                    <h6>Ceo,Catvills</h6>
+                                    <h4>{item.name}</h4>
+                                    <h6>{item.designation}</h6>
 
                             </div>
                         </SwiperSlide>

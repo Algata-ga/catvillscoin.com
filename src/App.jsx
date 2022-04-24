@@ -15,7 +15,7 @@ import { Element } from "react-scroll";
 function App() {
     return (
         <>
-            <Element name="Main">
+            <Element name="Home">
                 <Navbar />
                 <Main />
             </Element>

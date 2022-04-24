@@ -6,22 +6,24 @@ import cmc from "../../assets/cmc.png";
 
 import { Rightbtn, Leftbtn } from "../../components";
 import { Container } from "react-bootstrap";
-import { FiFacebook, FiTwitter, FiInstagram } from "react-icons/fi";
-import { AiOutlineMedium } from "react-icons/ai";
-//import { IoPaperPlaneOutline } from 'react-icons/io';
-//
+import {  AiOutlineTwitter } from "react-icons/ai";
+import { FaEthereum } from "react-icons/fa";
+import { FaDiscord } from "react-icons/fa";
+import { RiSendPlaneFill } from "react-icons/ri";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
 import { Link } from "react-scroll";
+import { useState } from "react";
 
 const Main = () => {
+    const [address,setAddress]=useState("0xa531a733070a5fF4866D1327d82e403Fa35290A6");
     return (
         <section className={style.main}>
             <div className={style.contract}>
                 <p>
-                    Contract Address :
-                    <CopyToClipboard onCopy={() => console.log("Copied")}>
-                        <span>0xa531a733070a5fF4866D1327d82e403Fa35290A6</span>
+                    Contract Address :&nbsp;
+                    <CopyToClipboard onCopy={() => {setAddress("Copied!");setTimeout(()=>setAddress("0xa531a733070a5fF4866D1327d82e403Fa35290A6"),1000);}}>
+                        <span className={style.span}>{address}</span>
                     </CopyToClipboard>
                 </p>
             </div>
@@ -38,53 +40,36 @@ const Main = () => {
                         is king here.
                     </p>
                     <div className={style.btns}>
-                        <Link
-                            spy={false}
-                            smooth={true}
-                            onSetActive={() => setActive(false)}
-                            offset={50}
-                            duration={500}
-                            delay={250}
-                            isDynamic={true}
-                            to="Buy"
-                        >
+                        <a href="https://pancakeswap.finance/swap?outputCurrency=0xa531a733070a5fF4866D1327d82e403Fa35290A6">
                             <Leftbtn
                                 className={style.btn}
-                                name="Buy now"
-                                width="200px"
+                                name="Buy Now"
+                                width="125px"
                                 height="40px"
                             />
-                        </Link>
-                        <Link
-                            spy={false}
-                            smooth={true}
-                            onSetActive={() => setActive(false)}
-                            offset={50}
-                            duration={500}
-                            delay={250}
-                            isDynamic={true}
-                            to="Graph"
-                        >
+                        </a>
+                        <a href="https://www.dextools.io/app/bsc/pair-explorer/0xd47f7b9452db24a2be284cd9820e59f656888c7d">
                             <Rightbtn
                                 className={style.btn}
                                 name="Chart"
-                                width="200px"
+                                width="125px"
                                 height="40px"
                             />
-                        </Link>
+                        </a>
                     </div>
                     <div className={style.social}>
-                        <a href="#">
-                            <FiFacebook className={style.link} />
+                        <a href="https://twitter.com/catvillscoin ">
+                           
+                            <AiOutlineTwitter className={style.link} />
                         </a>
-                        <a href="#">
-                            <FiTwitter className={style.link} />
+                        <a href=" https://discord.gg/cD9KFhvqtR">
+                            <FaDiscord className={style.link} />
                         </a>
-                        <a href="#">
-                            <FiInstagram className={style.link} />
+                        <a href="https://telegram.me/+LV6E7-Pi5vo1NGE9">
+                            <RiSendPlaneFill className={style.link} />
                         </a>
-                        <a href="#">
-                            <AiOutlineMedium className={style.link} />
+                        <a href="https://catvillscoin.eth">
+                            <FaEthereum className={style.link} />
                         </a>
                     </div>
                     <div className={style.partner}>

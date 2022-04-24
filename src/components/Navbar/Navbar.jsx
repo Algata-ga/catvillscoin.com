@@ -18,12 +18,26 @@ const Navbar = () => {
                 </a>
                 <div className={isActive ? style.close : style.open}>
                     <ul className={style.links}>
+                    <li className={style.link}>
+                            <Link
+                                spy={false}
+                                smooth={true}
+                                onClick={()=>setActive(!isActive)}
+                                offset={-60}
+                                duration={500}
+                                delay={250}
+                                isDynamic={true}
+                                to="Home"
+                            >
+                                Home
+                            </Link>
+                        </li>
                         <li className={style.link}>
                             <Link
                                 spy={false}
                                 smooth={true}
-                                onSetActive={() => setActive(false)}
-                                offset={50}
+                                onClick={() => setActive(!isActive)}
+                                offset={0}
                                 duration={500}
                                 delay={250}
                                 isDynamic={true}
@@ -37,8 +51,8 @@ const Navbar = () => {
                             <Link
                                 spy={false}
                                 smooth={true}
-                                onSetActive={() => setActive(false)}
-                                offset={50}
+                                onClick={() => setActive(!isActive)}
+                                offset={0}
                                 duration={500}
                                 delay={250}
                                 isDynamic={true}
@@ -51,22 +65,8 @@ const Navbar = () => {
                             <Link
                                 spy={false}
                                 smooth={true}
-                                onSetActive={() => setActive(false)}
-                                offset={50}
-                                duration={500}
-                                delay={250}
-                                isDynamic={true}
-                                to="Buy"
-                            >
-                                Buy
-                            </Link>
-                        </li>
-                        <li className={style.link}>
-                            <Link
-                                spy={false}
-                                smooth={true}
-                                onSetActive={() => setActive(false)}
-                                offset={50}
+                                onClick={() => setActive(!isActive)}
+                                offset={0}
                                 duration={500}
                                 delay={250}
                                 isDynamic={true}
@@ -79,11 +79,16 @@ const Navbar = () => {
                             <a href="https://stake.catvillscoin.com">Staking</a>
                         </li>
                         <li className={style.link}>
+                        <a  href={Whitepaper}
+                                download="CatvillsCoin Whitepaper.pdf">
+
                             <Rightbtn
                                 name="Whitepaper"
-                                href={Whitepaper}
-                                fileName="CatvillsCoin Whitepaper.pdf"
+                               
+                                width={window.matchMedia("(max-width:768px)").matches?"200px":"140px"}
+                                height="40px"
                             />
+                        </a>
                         </li>
                     </ul>
                 </div>

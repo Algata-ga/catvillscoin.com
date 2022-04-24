@@ -9,44 +9,18 @@ import "swiper/css/pagination";
 import { Autoplay, EffectCoverflow, Pagination } from "swiper";
 import { Container } from "react-bootstrap";
 
+import EaglesX0 from '../../assets/eaglesxAMA_0.png';
 
-const logo = "https://picsum.photos/300/200";
 const medium = [
     {
-        "name": 'A',
-        "image_url": logo,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
-        "id": 0,
+        "image_url": EaglesX0,
+        "title": 'Crypto Eagles X Catvills Coin',
+        "link": ' https://link.medium.com/wNk20f4capb',
     },
     {
-        "name": 'B',
-        "image_url": logo,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
-
-        "id": 1,
-    }, {
-        "name": 'C',
-        "image_url": logo,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
-
-        "id": 2,
-    }, {
-        "name": 'D',
-        "image_url": logo,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
-
-        "id": 3,
-    }, {
-        "name": 'E',
-        "image_url": logo,
-        "title": 'hello there',
-        "content": 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem exercitationem voluptatum minus quae eaque vitae tempore.',
-
-        "id": 4,
+        "image_url": 'https://cdn-images-1.medium.com/max/1024/1*f09fMttTQV6H1UVo2xqQrQ.jpeg',
+        "title": 'Cryptochallengers X Catvills Coin',
+        "link":'https://medium.com/@cryptochallengers/ama-recap-crypto-challengers-x-catville-venue-cryptochallengersd-date-12-apr-2022-time-1a510462d9a',
     }
 ];
 
@@ -78,6 +52,7 @@ const Latest = () => {
                     >
                         {medium.map((item) =>
                             <SwiperSlide key={item.id}      >
+                                <a href={item.link}>
                                 <div className={style.swiperslide}>
                                     <div className={style.imgbox}>
                                         <img src={item.image_url} />
@@ -85,6 +60,7 @@ const Latest = () => {
                                     <h5>{item.title}</h5>
                                     <p>{item.content}</p>
                                 </div>
+                                </a>
                             </SwiperSlide>
                         )}
                     </Swiper>
