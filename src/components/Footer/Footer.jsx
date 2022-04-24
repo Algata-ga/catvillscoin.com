@@ -14,7 +14,7 @@ const Footer = () => {
         <>
 
             <section className={style.footer}>
-                <Line />
+                <Line style={{paddingTop:"none"}}/>
                 <div className={style.footerbox}>
                     <div className={style.imgbox}>
                         <img src={logo} alt="logo" />
