@@ -45,6 +45,9 @@
     text-decoration: none;
     color: white;
 }
+.link:hover,.links li a:hover{
+    color: greenyellow;
+}
 @media (max-width:768px) {
     .hamburger{
         display: block;
