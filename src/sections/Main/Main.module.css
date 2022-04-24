@@ -48,6 +48,7 @@
 .main1 h1{
     font-size: 6rem;
     font-weight: bolder;
+    color: black;
     text-shadow: -10px 15px greenyellow;
 }
 .main1 p{
