@@ -1,5 +1,5 @@
 .main{
-    height: min(fit-content,calc(100vh - 90px));
+    height: min(max-content,calc(100vh - 90px));
     width: 100%;
     border-bottom: 2px solid black;
     margin-top: 60px;
@@ -103,6 +103,41 @@
     .main1 p{
         font-size: 1.3rem;
         max-width: 90ch;
+    }
+}
+
+@media (max-height:769px) {
+    .main1{
+        height: max-content;
+        padding: 2rem 0;
+    }
+    .main1 h1{
+        font-size: 2.8rem;
+        text-shadow: -5px 8px #bbeb69;
+
+    }
+    .main1 p{
+        font-size: 1.2rem;
+        max-width: 90%;
+    }
+    .link{
+        font-size: 1.5rem;
+        margin: 10px 10px;
+        background: #bbeb69;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        padding: 5px;
+    }
+    .contract p{
+        font-size: .8rem;
+    }
+    .partner h5{
+        font-size: 1rem;
+    }
+    .partnerimg{
+        width: 35px;
+        top: -10px;
     }
 }
 @media screen and (max-width:768px) {
