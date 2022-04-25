@@ -1,0 +1,101 @@
+.team{
+    background: black;
+    padding-top: 3rem;
+    color: white;
+}
+.teamcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.teamcontainer p{
+    width: 80%;
+    margin: 2rem 0;
+    text-align: center;
+}
+.swiper{
+    height: 500px;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.box{
+    margin: 30px 30px;
+    width: 290px !important;
+    aspect-ratio: 1;
+    color: #bbeb69;
+    text-align: right;
+}
+.imgbox{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.imgbox::before{
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 90%;
+    top: -10px;
+    left: 10px;
+    border: 5px solid #bbeb69;
+    z-index: 0;
+}
+.imgbox img{
+    object-fit: cover;
+    position: absolute;
+    left: 0;
+    border: 2px solid grey;
+    width: 100%;
+    height: 90%;
+    background: black;
+}
+.box h4{
+    margin: 10px 0;
+    color: white;
+}
+.modalcontainer{
+    width: min(80%,35rem);
+    height: min(max-content,70vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1rem 0;
+    position: relative;
+    color: #bbeb69;
+}
+.modalcontainer img{
+    width: 250px;
+    border: 2px solid #bbeb69;
+}
+.modalcontainer h2,.modalcontainer h4{
+    max-width: 90ch;
+    padding-top: 10px;
+    text-align: center;
+}
+.modalcontainer h2{
+    color: white;
+}
+.modalcontainer h6{
+    color: rgb(200, 199, 199);
+    max-width: 90ch;
+    padding-top: 10px;
+    text-align: center;
+}
+
+.close{
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border-radius: 50%;
+    padding: 5px;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: #bbeb69;
+    color: black;
+}

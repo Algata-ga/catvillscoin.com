@@ -1,0 +1,56 @@
+.latest{
+    background: black;
+    padding-top: 3rem;
+
+}
+
+
+.swiper{
+    height: 90%;
+    width: 90%;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+.swiperslide{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+.swiperslide .imgbox{
+    height: 100%;
+    width: 95%;
+    overflow: hidden;
+    margin-top: 10px;
+
+}
+.swiperslide img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+.swiperslide h5,.swiperslide p{
+    width: 80%;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    white-space: normal;
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    text-overflow: ellipsis;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    margin: 5px 0;
+    text-align: center;
+    color:#fff;
+}
+.swiperslide h5{
+    font-weight: bold;
+
+}
+.swiperslide p{
+    color: #828282;
+}
