@@ -1,0 +1,90 @@
+.App {
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+
+.swiper-slide{
+  background: black;
+  width: 24rem !important;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white ;
+  margin: 0 10px;
+  border:  2px solid #383838;
+  overflow: hidden;
+  min-height: 275px;
+
+}
+@media (max-width:992px) {
+  .swiper-slide{
+      width: 33%;
+      margin:  0 10px ;
+
+  }
+}
+@media (max-width:768px) {
+  .swiper-slide{
+      width: 22rem !important;
+      margin:  0 10px ;
+
+  }
+}
+@media (max-width:576px) {
+  .swiper-slide{
+      margin:  0 5px;
+      
+      width: 20rem !important;
+  }
+}
+@media (max-width:400px) {
+  .swiper-slide{
+      margin:  0 5px ;
+      
+      width: 18rem!important;
+  }
+}
+
+a{
+  text-decoration: none;
+}

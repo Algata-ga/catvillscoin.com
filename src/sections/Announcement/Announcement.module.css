@@ -1,0 +1,47 @@
+.announcement{
+    background: black;
+    margin-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: auto;
+    
+}
+.announcont{
+    padding-top: 3rem;
+
+}
+
+.carousel{
+    width: 100% !important;
+    height: 50vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+}
+.carouselitem,.imgbox{
+    width: 100% !important;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.imgbox .img{
+    height: 50vh;
+    object-fit: contain;
+    position: relative;
+    top: -10px;
+    left: -10px;
+    z-index: 1;
+}
+
+@media (max-width:566px) {
+    
+    .carousel{
+        height: 35vh;
+    }
+}

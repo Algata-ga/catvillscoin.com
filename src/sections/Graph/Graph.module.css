@@ -1,0 +1,31 @@
+.graph{
+    background: black;
+    padding-top: 3rem;
+}
+.graphcontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.img{
+    margin-top: 2rem;
+    width: min(100%,40rem);
+}
+.p{
+    max-width: 80ch;
+    margin-top: 1rem;
+    color: white;
+    text-align: center;
+}
+.h2{
+    color: #bbeb69;
+    padding-top: 20px;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+@media screen and (max-width:576px) {
+    .h2{
+        font-size: 1.5rem;
+    }
+}
