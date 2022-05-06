@@ -4,7 +4,7 @@ import challengers from "../../assets/challengers.png";
 
 import cmc from "../../assets/cmc.png";
 
-import { Rightbtn, Leftbtn } from "../../components";
+import { Rightbtn, Leftbtn,Centerbtn } from "../../components";
 import { Container } from "react-bootstrap";
 import {  AiOutlineTwitter } from "react-icons/ai";
 import { FaEthereum } from "react-icons/fa";
@@ -48,6 +48,14 @@ const Main = () => {
                                 height="40px"
                             />
                         </a>
+                        <a href="https://stake.catvillscoin.com/">
+                            <Centerbtn 
+                            className={style.btn}
+                            name="Stake"
+                            width="100px"
+                            height="40px"/>
+                        </a>
+
                         <a href="https://www.dextools.io/app/bsc/pair-explorer/0xd47f7b9452db24a2be284cd9820e59f656888c7d">
                             <Rightbtn
                                 className={style.btn}
