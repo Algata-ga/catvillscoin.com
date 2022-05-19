@@ -51,15 +51,15 @@ const Main = () => {
                         <a href="https://stake.catvillscoin.com/">
                             <Centerbtn 
                             className={style.btn}
-                            name="Swap"
+                            name="Stake"
                             width="100px"
                             height="40px"/>
                         </a>
 
-                        <a href="https://www.dextools.io/app/bsc/pair-explorer/0xd47f7b9452db24a2be284cd9820e59f656888c7d">
+                        <a href="https://catvillscoinswap.com">
                             <Rightbtn
                                 className={style.btn}
-                                name="Chart"
+                                name="Swap"
                                 width="125px"
                                 height="40px"
                             />
