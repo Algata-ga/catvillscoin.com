@@ -51,7 +51,7 @@ const Main = () => {
                         <a href="https://stake.catvillscoin.com/">
                             <Centerbtn 
                             className={style.btn}
-                            name="Stake"
+                            name="Swap"
                             width="100px"
                             height="40px"/>
                         </a>

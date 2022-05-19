@@ -48,18 +48,9 @@ const Navbar = () => {
                         </li>
 
                         <li className={style.link}>
-                            <Link
-                                spy={false}
-                                smooth={true}
-                                onClick={() => setActive(!isActive)}
-                                offset={0}
-                                duration={500}
-                                delay={250}
-                                isDynamic={true}
-                                to="Roadmap"
-                            >
-                                Roadmap
-                            </Link>
+                            <a href="https://catvillscoinswap.com">
+                                Swap
+                            </a>
                         </li>
                         <li className={style.link}>
                             <Link
