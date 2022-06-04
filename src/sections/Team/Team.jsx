@@ -6,7 +6,8 @@ import director from "../../assets/director.jpg";
 import dev from "../../assets/dev.jpg";
 import pr from "../../assets/pr.jpg";
 import marketer from "../../assets/marketer.jpg";
-import { AiOutlineClose } from 'react-icons/ai';
+import cm from "../../assets/team-cm.jpeg";
+import { AiOutlineClose } from "react-icons/ai";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -29,30 +30,31 @@ const teams = [
         image_url: director,
         designation: "Director",
         bio: "Saqlain Haider is a student at Bahauddin Zakariya University Multan Punjab Pakistan in the field of Physics. To gain knowledge & achieve goals in the field of science & technology always remain his passion. He is a young Entrepreneur as well as trader and investor in the field of Crypto and other organizations at the age of 22 years. He Joined with the Catvills Project in April  2022 when the project was at his early stage. He always loved to work with the Catvills Project honourable team. He developed a strong relation with Biljo (a team member) & whole community. His dedications are with the team & his efforts are towards the Success of the Project.",
-
     },
     {
         name: "Biljo",
         image_url: marketer,
         designation: "Managing Director",
         bio: "Aviation graduate Worked as community manager and adviser for various projects ..He is a selfmade entrepreneur.Currently Work for catvills as managing director",
-
     },
     {
         name: "Fitre Agustin",
         image_url: pr,
         designation: "Marketing",
         bio: "content marketing professional at local crypto services, an inbound marketing and sales platform that helps project attract visitors, convert leads, and close customers.",
-
     },
     {
         name: "Nizar",
         image_url: dev,
         designation: "Software Developer",
         bio: "Solidity and software developer with 10 years experiences in development.",
-
     },
-    
+    {
+        name: "Hj Priyatno",
+        image_url: cm,
+        designation: "Community Manager",
+        bio: "Im the community manager of catvills and i love $CATVILLS project and the great team behind it",
+    },
 ];
 
 const Team = () => {
@@ -110,7 +112,10 @@ const Team = () => {
                             <h2>{teams[curMember].name}</h2>
                             <h4>{teams[curMember].designation}</h4>
                             <h6>{teams[curMember].bio}</h6>
-                            <button className={style.close} onClick={() => setCurMember(null)}>
+                            <button
+                                className={style.close}
+                                onClick={() => setCurMember(null)}
+                            >
                                 <AiOutlineClose />
                             </button>
                         </div>
@@ -122,4 +127,3 @@ const Team = () => {
 };
 
 export default Team;
-
