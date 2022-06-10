@@ -4,9 +4,9 @@ import challengers from "../../assets/challengers.png";
 
 import cmc from "../../assets/cmc.png";
 
-import { Rightbtn, Leftbtn,Centerbtn } from "../../components";
+import { Rightbtn, Leftbtn, Centerbtn } from "../../components";
 import { Container } from "react-bootstrap";
-import {  AiOutlineTwitter } from "react-icons/ai";
+import { AiOutlineTwitter } from "react-icons/ai";
 import { FaEthereum } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
 import { RiSendPlaneFill } from "react-icons/ri";
@@ -16,13 +16,26 @@ import { Link } from "react-scroll";
 import { useState } from "react";
 
 const Main = () => {
-    const [address,setAddress]=useState("0xa531a733070a5fF4866D1327d82e403Fa35290A6");
+    const [address, setAddress] = useState(
+        "0xa531a733070a5fF4866D1327d82e403Fa35290A6"
+    );
     return (
         <section className={style.main}>
             <div className={style.contract}>
                 <p>
                     Contract Address :&nbsp;
-                    <CopyToClipboard onCopy={() => {setAddress("Copied!");setTimeout(()=>setAddress("0xa531a733070a5fF4866D1327d82e403Fa35290A6"),1000);}}>
+                    <CopyToClipboard
+                        onCopy={() => {
+                            setAddress("Copied!");
+                            setTimeout(
+                                () =>
+                                    setAddress(
+                                        "0xa531a733070a5fF4866D1327d82e403Fa35290A6"
+                                    ),
+                                1000
+                            );
+                        }}
+                    >
                         <span className={style.span}>{address}</span>
                     </CopyToClipboard>
                 </p>
@@ -49,11 +62,12 @@ const Main = () => {
                             />
                         </a>
                         <a href="https://stake.catvillscoin.com/">
-                            <Centerbtn 
-                            className={style.btn}
-                            name="Stake"
-                            width="100px"
-                            height="40px"/>
+                            <Centerbtn
+                                className={style.btn}
+                                name="Stake"
+                                width="100px"
+                                height="40px"
+                            />
                         </a>
 
                         <a href="https://catvillscoinswap.com">
@@ -67,13 +81,12 @@ const Main = () => {
                     </div>
                     <div className={style.social}>
                         <a href="https://twitter.com/catvillscoin ">
-                           
                             <AiOutlineTwitter className={style.link} />
                         </a>
                         <a href=" https://discord.gg/cD9KFhvqtR">
                             <FaDiscord className={style.link} />
                         </a>
-                        <a href="https://telegram.me/+LV6E7-Pi5vo1NGE9">
+                        <a href="https://t.me/catvillscoinportal">
                             <RiSendPlaneFill className={style.link} />
                         </a>
                         <a href="https://catvillscoin.eth">
@@ -103,4 +116,3 @@ const Main = () => {
     );
 };
 export default Main;
-
