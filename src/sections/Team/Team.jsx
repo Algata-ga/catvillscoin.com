@@ -50,7 +50,7 @@ const teams = [
         bio: "Solidity and software developer with 10 years experiences in development.",
     },
     {
-        name: "Hj Priyatno",
+        name: "ANNO VAKSIN",
         image_url: cm,
         designation: "Community Manager",
         bio: "Im the community manager of catvills and i love $CATVILLS project and the great team behind it",
