@@ -9,6 +9,7 @@ import { Container } from "react-bootstrap";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaEthereum } from "react-icons/fa";
 import { FaDiscord } from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
 import { RiSendPlaneFill } from "react-icons/ri";
 import { CopyToClipboard } from "react-copy-to-clipboard";
 
@@ -82,6 +83,9 @@ const Main = () => {
                     <div className={style.social}>
                         <a href="https://twitter.com/catvillscoin ">
                             <AiOutlineTwitter className={style.link} />
+                        </a>
+                        <a href="mailto:info@catvillscoin.com">
+                            <SiGmail className={style.link} />
                         </a>
                         <a href=" https://discord.gg/cD9KFhvqtR">
                             <FaDiscord className={style.link} />
